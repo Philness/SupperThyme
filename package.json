@@ -5,10 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "flow": "flow",
+    
+    "flow start": "flow start",
+    
+    "flow stop": "flow stop",
+    
+    "flow status": "flow status",
+    
+    "flow coverage": "flow coverage"
   },
-  "babel":{
-    "presets":["es2015"]
+  "babel": {
+    "presets": ["es2015"]
   },
   "author": "PE",
   "license": "ISC",
@@ -22,11 +31,24 @@
     "react-router": "^4.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.58.0",
+    "prettier": "^1.7.4",
+    "prettier-eslint": "^8.2.1",
     "webpack": "^3.8.1"
   }
 }

@@ -1,0 +1,25 @@
+TO INSTALL
+
+1. Install eslint --save-dev
+2. Install babel-eslint --save-dev
+3. Install eslint-plugin-flowtype --save-dev
+4. Install prettier  --save-dev
+5. Install eslint-plugin-prettier --save-dev
+6. Install eslint-config-prettier --save-dev
+7. install install-peerdeps -g
+8. install-peerdeps --dev eslint-config-airbnb
+CONFIGURATION IN .eslintrc.json
+Add "extends": "airbnb" to your .eslintrc
+{
+  "plugins": [
+    "prettier", "flowtype"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+{
+  "extends": [
+    "prettier", "airbnb", "plugin:flowtype/recommended"]
+  ]
+}
